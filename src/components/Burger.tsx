@@ -47,6 +47,7 @@ p, li, a{
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+    z-index: 99;
 }
 
 .col:first-of-type {
@@ -54,11 +55,13 @@ p, li, a{
 }
 
 .container{
+
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
   position: relative;
   text-align: center;
+  
 }
 
 /* CLEARFIX */
@@ -80,6 +83,7 @@ p, li, a{
 /* ALL */
 
 .row .three{
+
   padding: 80px 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -90,6 +94,7 @@ p, li, a{
 }
 
 .hamburger .line{
+z-index: 90;
   width: 50px;
   height: 5px;
   background-color: #ecf0f1;
@@ -105,7 +110,9 @@ p, li, a{
 }
 
 
+
 #hamburger-6.is-active{
+
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -137,6 +144,7 @@ p, li, a{
 }
 
 #hamburger-6.is-active .line:nth-child(3){
+
   -webkit-transform: translateY(-13px) rotate(90deg);
   -ms-transform: translateY(-13px) rotate(90deg);
   -o-transform: translateY(-13px) rotate(90deg);

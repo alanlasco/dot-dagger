@@ -37,9 +37,11 @@ const NavContainer = styled.nav`
   h2 {
     color: white;
     font-weight: 400;
+    z-index: 99;
 
     span {
       font-weight: bold;
+      z-index: 99;
     }
   }
 
@@ -50,8 +52,10 @@ const NavContainer = styled.nav`
   }
 
   .burger {
+  z-index: 100;
     @media (min-width: 768px) {
       display: none;
+      
     }
   }
 
@@ -79,11 +83,13 @@ const NavContainer = styled.nav`
       margin-right: auto;
       text-align: center;
       transition: opacity 0.5s ease-in-out 0.3s;
+      z-index: 99;
 
       a {
         font-size: 2rem;
         display: block;
         margin-top: 1rem;
+        z-index: 99;
       }
     }
   }
@@ -110,7 +116,7 @@ const BgDiv = styled.div`
   top: -1000px;
   width: 0%;
   height: 0%;
-  z-index: -1;
+  z-index: 90;
   transition: all 0.5s ease-in-out;
 
   &.active {
