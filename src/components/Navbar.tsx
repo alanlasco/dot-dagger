@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Burger } from './Burger';
-
+import "../styles/Navbar.css";
 export const Navbar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
 
@@ -11,13 +11,13 @@ export const Navbar = () => {
 
   return (
     <NavContainer>
-      <h2>
-        Navbar <span>prueba</span>
+      <h2 className='DotDagerNav'>
+      &lt;DOT DAGER&gt;
       </h2>
       <div className={`links ${clicked ? 'active' : ''}`}>
-        <a onClick={handleclick} href="/">Home</a>
-        <a onClick={handleclick} href="/about">About</a>
-        <a onClick={handleclick} href="/contact">Contact</a>
+        <a className='linkN' onClick={handleclick} href="/">Home</a>
+        <a className="linkN" onClick={handleclick} href="/about">About</a>
+        <a className="linkN" onClick={handleclick} href="/contact">Contact</a>
       </div>
       <div className="burger">
         <Burger clicked={clicked} handleClick={handleclick} />
@@ -28,8 +28,10 @@ export const Navbar = () => {
 };
 
 const NavContainer = styled.nav`
-  padding: 0.4rem;
-  background-color: #333;
+
+border-bottom: 3px solid #67175a ;
+  padding: 1.5rem;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +70,7 @@ const NavContainer = styled.nav`
     a {
       color: white;
       font-size: 1rem;
-      margin-right: 1rem;
+      margin-right: 6rem;
     }
 
     /* Estilos para el menú en pantallas pequeñas */
@@ -84,6 +86,7 @@ const NavContainer = styled.nav`
       text-align: center;
       transition: opacity 0.5s ease-in-out 0.3s;
       z-index: 99;
+
 
       a {
         font-size: 2rem;

@@ -1,5 +1,134 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../assets/font/NotoSerif-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .pickles {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #88ff64;
+    font-family: "Consolas", "Courier New", "Lucida Console", Monaco, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    width: 0; /* Inicia con ancho 0 */
+    border-right: 4px solid;
+    animation: typing 2s steps(10) 1s forwards, blink .5s infinite step-end alternate; /* Ajusta steps según el texto */
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18ch; /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+
+ 
+@media screen and (max-width: 769px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .roundedImg {
+ 
+        display: none;
+        margin-left: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #67175a; /* Valor corregido */
+        box-shadow: 0 0 0 4px #67175a; 
+    }
+    .DotDager{
+      font-family: 'Noto Serif';
+      font-size: 2rem;
+    }
+    .buttonContainer{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .roundedImgHidden{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid  #67175a ;
+      box-shadow: 0 0 0 4px #67175a  ; 
+
+    }
+    .pickles{
+      font-size: 1.3rem;
+    }
+    .DotDagerText{
+      margin: 1rem;
+    }
+    .content{
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) { 
+  .content{
+    text-align: left;
+  }
+  .roundedImg{
+    margin-top: 2rem;
+    display: block;
+  }
+  .roundedImgHidden{
+    display: none;
+  }
+
+.DotDager{  
+        
+        font-size: 3.5vw;
+        font-family: 'Noto Serif';
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */ 
+
+}
+.DotDagerText{
+    font-size: 2rem;
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */  
+    margin-bottom: 2rem;
+}
+.DotDagerInfo{
+    font-size: 1rem;
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */  
+    margin-bottom: 2em;
+    color: rgb(227, 208, 248)
+}}
+
 :root {
   --color-bg1: rgb(8, 10, 15);
   --color-bg2: rgb(0, 17, 32);
@@ -19,10 +148,9 @@
   outline:none;
   list-style:none;
   text-decoration:none;
-  box-sizing:border-box;
   color:#FFF;
   background: transparent;
-  border:none;
+
 }
 
 .card {
@@ -32,13 +160,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
-  max-width: 600px;
-  padding: 48px;
+  
+  padding: 5rem;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 8px;
   box-shadow: 0 4px 90px rgba(0,0,0,0.1);
   overflow: hidden;
+  height: 55%;
   &:before {
     content: "";
     position: absolute;
@@ -54,18 +183,13 @@
     mix-blend-mode: hard-light;
   }
 
-  .noise {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    opacity: 0.1;
-  }
 
   .content {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    height: 45vh;
+
     z-index: 2;
     text-shadow: -3px 0px 2px rgba(0,0,0,0.1);
   }
@@ -238,4 +362,102 @@ p {
 
     opacity: 0.7;
   }
+}
+.roundedImg{
+    margin-left: 2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid  #67175a ;
+    box-shadow: 0 0 0 4px #67175a  ; 
+}
+.borderTwo{
+    
+    display: inline-block;
+    margin: 12rem; /* Espacio entre los bordes */
+    background-color: #67175a;  /* Segundo borde, más alejado */
+    border-radius: 50%; 
+    margin-right: 13rem;
+}
+
+.buttonContainer{
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+
+.boton-elegante {
+    z-index: 80;
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .boton-elegante::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .boton-elegante:hover::after {
+    transform: scale(4);
+  }
+  
+  .boton-elegante:hover {
+    border-color:  #b13fac ;
+    background: #67175a;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Espaciado entre texto e imagen */
+  }
+  
+
+  
+
+
+  
+  .buttonContainer {
+    margin-top: 20px;
+  }
+  
+
+  
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18ch; /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

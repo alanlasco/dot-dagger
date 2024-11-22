@@ -5,29 +5,23 @@ export const Home = () => {
     <>
     <div className='homeContainer'>
     <div className="card">
-    <svg 
-         viewBox="0 0 100% 100%"
-         xmlns='http://www.w3.org/2000/svg'
-         className="noise"
-         >
-      <filter id='noiseFilter'>
-        <feTurbulence 
-                      type='fractalNoise' 
-                      baseFrequency='0.85' 
-                      numOctaves='6' 
-                      stitchTiles='stitch' />
-      </filter>
-  
-      <rect
-            width='100%'
-            height='100%'
-            preserveAspectRatio="xMidYMid meet"
-            filter='url(#noiseFilter)' />
-    </svg>
-    <div className="content">
-      <h1>Interactive Gradient</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore unde ex pariatur distinctio laboriosam, dolorem quibusdam aperiam expedita consequuntur dolorum porro vitae earum quos voluptates et maxime. Tempora, mollitia.</p>
+
+  <div className="content">
+    <div className='textContent'>
+    <p className='pickles'>&gt; Pickles are Love</p>
+    <h1 className='DotDager'>&lt;DOT DAGER&gt;</h1>
+    <img src="logo.png" alt="" className="roundedImgHidden" />
+    <h2 className='DotDagerText'>Full- Stack Senior developer and Content creator</h2>
+    <p className='DotDagerInfo'> I am a Musician; keen on Philosofy and of course a cat lover</p>
+    <div className='buttonContainer'>
+      <button className="boton-elegante">Explore</button>
     </div>
+    </div>
+ 
+
+    <img src="logo.png" alt="" className="roundedImg" />
+
+</div>
   </div>
   <div className="gradient-bg">
     <svg 
@@ -57,6 +51,7 @@ export const Home = () => {
         </filter>
       </defs>
     </svg>
+    
     <div className="gradients-container">
       <div className="g1"></div>
       <div className="g2"></div>
@@ -65,6 +60,7 @@ export const Home = () => {
       <div className="g5"></div>
       <div className="interactive"></div>
     </div>
+    
   </div></div></>
   )
 }
