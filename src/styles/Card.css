@@ -1,54 +1,103 @@
+/* Fondo general */
+body {
+  background-color: #efdfff;
+  font-family: 'Roboto', sans-serif; /* Usa una fuente moderna */
+}
+
+/* Tarjeta */
 .cardIn {
-    width: 17rem;
-    background:  #524479 ;
-    padding: .4em;
-    border-radius: 6px;
-  }
-  
-  .card-image {
-    background-color: rgb(159, 75, 238);
-    width: 100%;
-    height: 17rem;
-    border-radius: 6px 6px 0 0;
-  }
-  
-  .card-image:hover {
-    transform: scale(0.98);
-  }
-  
-  .category {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: rgb(63, 121, 230);
-    padding: 10px 7px 0;
-  }
-  
-  .category:hover {
-    cursor: pointer;
-  }
-  
-  .heading {
-    font-weight: 600;
-    color: rgb(88, 87, 87);
-    padding: 7px;
-  }
-  
-  .heading:hover {
-    cursor: pointer;
-  }
-  
-  .author {
-    color: gray;
-    font-weight: 400;
-    font-size: 11px;
-    padding-top: 20px;
-  }
-  
-  .name {
-    font-weight: 600;
-  }
-  
-  .name:hover {
-    cursor: pointer;
-  }
+  width: 23rem;
+  background: linear-gradient(135deg, #8b6ce2, #8a2be2); /* Gradiente suave para el fondo */
+  padding: 1.2em;
+  border-radius: 15px; /* Bordes más redondeados para un look más suave */
+  height: 30rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out; /* Transición al hacer hover */
+}
+
+.cardIn:hover {
+  transform: scale(1.05); /* Efecto de aumento al hacer hover */
+}
+
+/* Imagen */
+.card-image, .imgCard {
+  background-color: rgb(180, 110, 245);
+  width: 100%;
+  height: 20rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out; /* Transición para la imagen */
+}
+
+.card-image:hover {
+  transform: scale(1.05); /* Zoom sutil al hacer hover */
+}
+
+/* Categoría */
+.category {
+  text-transform: uppercase;
+  font-size: 1.4em; /* Aumenta el tamaño de la fuente */
+  font-weight: 700;
+  color: #f4f4f4; /* Color blanco para un contraste mejor */
+  padding: 10px 7px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+  text-align: center;
+  letter-spacing: 1px; /* Espaciado de letras */
+  transition: color 0.3s ease-in-out;
+}
+
+.category:hover {
+
+  color: #67175a;; /* Cambio de color al hacer hover */
+}
+
+/* Título y texto */
+.heading {
+  font-weight: 700;
+  color: #f1f1f1;
+  padding: 10px 0;
+  font-size: 1.3em; /* Tamaño de fuente ajustado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
+
+/* Autor */
+.author {
+  color: rgb(143, 138, 150);
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Más espacio entre el texto y el ícono */
+}
+
+/* Nombre del autor y enlace */
+.name a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.7em; /* Íconos más grandes */
+  transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.name a:hover {
+  transform: scale(1.2); /* Aumento del ícono al pasar el ratón */
+}
+
+/* Colores específicos de cada ícono en hover */
+.instagram:hover {
+  color: #E1306C;
+}
+
+.youtube:hover {
+  color: #FF0000;
+}
+
+.github:hover {
+  color: #000000;
+}
+
+.spotify:hover {
+  color: #1DB954;
+}

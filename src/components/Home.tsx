@@ -14,7 +14,9 @@ export const Home = () => {
     <h2 className='DotDagerText'>Full- Stack Senior developer and Content creator</h2>
     <p className='DotDagerInfo'> I am a Musician; keen on Philosofy and of course a cat lover</p>
     <div className='buttonContainer'>
+      <a href="#about">
       <button className="boton-elegante">Explore</button>
+      </a>
     </div>
     </div>
  

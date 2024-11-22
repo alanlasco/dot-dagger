@@ -1,18 +1,31 @@
 /* Estilo principal */
 .interestsContainer {
     margin-top: 5rem;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 /* Asegura que las cajas estén separadas */
 }
 
+
+
 /* Media query para pantallas más grandes (mínimo 768px) */
 @media (min-width: 768px) {
     .interestsContainer {
         display: flex;
-        flex-direction: row; /* Cambia a columna en pantallas grandes */
+        flex-wrap: wrap; 
+        gap: 1.5rem;
+        flex-direction: row;
+       /* Cambia a columna en pantallas grandes */
         justify-content: space-evenly; /* Alinea las cajas al centro */
    /* Asegura que las cajas se centren horizontalmente */
     }
 }
+
+@media (max-width: 768px) {
+    .interestsContainer{
+        flex-wrap: wrap; 
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }}

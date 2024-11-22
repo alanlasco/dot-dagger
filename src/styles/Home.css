@@ -7,6 +7,11 @@
     font-style: normal;
   }
 
+
+  .DotDager, .DotDagerInfo, .DotDagerText{
+    color: #ffffff;
+  }
+
   .pickles {
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -46,6 +51,7 @@
         flex-direction: column;
         text-align: center;
         
+        
     }
 
     .roundedImg {
@@ -84,6 +90,11 @@
     }
     .pickles{
       font-size: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: .5rem;
     }
     .DotDagerText{
       margin: 1rem;
@@ -148,7 +159,7 @@
   outline:none;
   list-style:none;
   text-decoration:none;
-  color:#FFF;
+
   background: transparent;
 
 }

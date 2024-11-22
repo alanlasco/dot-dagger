@@ -2,22 +2,30 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Burger } from './Burger';
 import "../styles/Navbar.css";
+
 export const Navbar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
 
+  // Función para alternar el estado de "clicked"
   const handleclick = () => {
     setClicked(!clicked);
+  };
+
+  // Función para cerrar el menú (poniendo clicked a false)
+  const closeMenu = () => {
+    setClicked(false);
   };
 
   return (
     <NavContainer>
       <h2 className='DotDagerNav'>
-      &lt;DOT DAGER&gt;
+        &lt;DOT DAGER&gt;
       </h2>
       <div className={`links ${clicked ? 'active' : ''}`}>
-        <a className='linkN' onClick={handleclick} href="/">Home</a>
-        <a className="linkN" onClick={handleclick} href="/about">About</a>
-        <a className="linkN" onClick={handleclick} href="/contact">Contact</a>
+        {/* Los enlaces ahora llaman a closeMenu para cerrarlo */}
+        <a className='linkN' onClick={closeMenu} href="/">Home</a>
+        <a className="linkN" onClick={closeMenu} href="#about">About</a>
+        <a className="linkN" onClick={closeMenu} href="#contact">Contact</a>
       </div>
       <div className="burger">
         <Burger clicked={clicked} handleClick={handleclick} />
@@ -28,8 +36,7 @@ export const Navbar = () => {
 };
 
 const NavContainer = styled.nav`
-
-border-bottom: 3px solid #67175a ;
+  border-bottom: 3px solid #67175a ;
   padding: 1.5rem;
   background: #333;
   display: flex;
@@ -54,15 +61,14 @@ border-bottom: 3px solid #67175a ;
   }
 
   .burger {
-  z-index: 100;
+    z-index: 100;
     @media (min-width: 768px) {
       display: none;
-      
     }
   }
 
   .links {
-    display: flex; /* En pantallas grandes, los enlaces estarán en fila */
+    display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -73,10 +79,9 @@ border-bottom: 3px solid #67175a ;
       margin-right: 6rem;
     }
 
-    /* Estilos para el menú en pantallas pequeñas */
     @media (max-width: 768px) {
-      display: flex; /* Usamos flexbox también para el menú hamburguesa */
-      flex-direction: column; /* Los enlaces se apilan en columna */
+      display: flex;
+      flex-direction: column;
       position: absolute;
       top: -700px;
       left: -2000px;
@@ -86,7 +91,6 @@ border-bottom: 3px solid #67175a ;
       text-align: center;
       transition: opacity 0.5s ease-in-out 0.3s;
       z-index: 99;
-
 
       a {
         font-size: 2rem;

@@ -1,0 +1,116 @@
+.textConnect{
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: black;
+}
+
+.aboutMariano{
+    font-size: 3.5rem;
+    color: #67175a;
+    font-family:'Noto Serif';
+    margin-bottom: .5rem;
+
+}
+
+.frase, .frasedos{
+    font-family:'Noto Serif';
+    color: rgb(46, 39, 61);
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: aparecer 4s forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+.pepino{
+    height: 5rem;
+}
+.pepinoRotado{
+    transform: rotate(10deg); 
+}
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .aboutMariano {
+      font-size: 1.5rem;/* ejemplo de cambio */
+    }
+  }
+
+
+
+
+.spinner img {
+    margin-top: 8rem;
+    width: 20rem; /* Ajusta el tamaño de la imagen */
+    height: 20rem; /* Ajusta el tamaño de la imagen */
+    animation: spin 2s linear infinite; /* Duración, interpolación y repetición infinita */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg); /* Comienza sin rotación */
+    }
+    to {
+      transform: rotate(360deg); /* Gira 360 grados */
+    }
+  }
+
+  .frasedos{
+    margin-top: 5rem;
+  }
+
+  .contactContainer{
+    margin-top: 10rem;
+    height: 100%;
+}
+
+
+
+.socials {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+ /* Asegura que ocupe toda la altura de la pantalla */
+ margin-bottom: 5rem;
+  }
+  
+  .aContainer {
+    border-radius: 15px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #8b6ce2, #8a2be2);
+    display: flex;
+    justify-content: center; /* Alinea los elementos a lo largo del eje horizontal */
+    gap: 10px; /* Espacio entre cada imagen */
+  }
+  
+  .red {
+    width: 3rem; /* Ajusta el tamaño de las imágenes */
+    height: 3rem;
+    transition: transform 0.2s ease-in-out; /* Transición suave */
+  }
+  
+  .red:hover {
+    animation: rebote 0.5s ease-in-out; /* Activa la animación al hacer hover */
+  }
+  
+  @keyframes rebote {
+    0% {
+      transform: scale(1); /* Tamaño inicial */
+    }
+    30% {
+      transform: scale(1.2); /* Aumenta un poco el tamaño */
+    }
+    50% {
+      transform: scale(1); /* Vuelve al tamaño original */
+    }
+    70% {
+      transform: scale(1.1); /* Aumenta un poco más */
+    }
+    100% {
+      transform: scale(1); /* Vuelve al tamaño original */
+    }
+  }
