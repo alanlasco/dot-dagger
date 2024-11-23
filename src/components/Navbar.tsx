@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Burger } from './Burger';
 import "../styles/Navbar.css";
-
+import { GiCrossedAxes } from "react-icons/gi";
 export const Navbar = () => {
   const [clicked, setClicked] = useState<boolean>(false);
 
@@ -19,13 +19,14 @@ export const Navbar = () => {
   return (
     <NavContainer>
       <h2 className='DotDagerNav'>
-        &lt;DOT DAGER&gt;
+        <span className='flecha'>&lt;</span> DOT DAGER <span className='flecha'>&gt;</span>
       </h2>
       <div className={`links ${clicked ? 'active' : ''}`}>
         {/* Los enlaces ahora llaman a closeMenu para cerrarlo */}
         <a className='linkN' onClick={closeMenu} href="/">Home</a>
         <a className="linkN" onClick={closeMenu} href="#about">About</a>
         <a className="linkN" onClick={closeMenu} href="#contact">Contact</a>
+        <a className='linkN' href="#lj"><GiCrossedAxes /></a>
       </div>
       <div className="burger">
         <Burger clicked={clicked} handleClick={handleclick} />

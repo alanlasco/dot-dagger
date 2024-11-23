@@ -7,6 +7,8 @@ import { Interests } from './components/Interests';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { LumberJack } from './components/LumberJack';
+import ScrollToTopButton from './components/ScrollToTop';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <About/>
       <Interests/>
       <Contact/>
+      <LumberJack/>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   );
 }

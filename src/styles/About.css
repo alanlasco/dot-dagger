@@ -36,6 +36,7 @@
 @media (max-width: 768px) {
     /* Estilos para pantallas pequeñas */
     .aboutMariano {
-      font-size: 1.5rem;/* ejemplo de cambio */
+      font-size: 1.5rem;
+      /* ejemplo de cambio */
     }
   }

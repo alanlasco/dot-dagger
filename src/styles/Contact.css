@@ -75,7 +75,7 @@
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
  /* Asegura que ocupe toda la altura de la pantalla */
- margin-bottom: 5rem;
+ margin-bottom: 8rem;
   }
   
   .aContainer {
