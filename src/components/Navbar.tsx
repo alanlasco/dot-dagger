@@ -23,7 +23,7 @@ export const Navbar = () => {
       </h2>
       <div className={`links ${clicked ? 'active' : ''}`}>
         {/* Los enlaces ahora llaman a closeMenu para cerrarlo */}
-        <a className='linkN' onClick={closeMenu} href="/">Home</a>
+        <a className='linkN' onClick={closeMenu} href="#home">Home</a>
         <a className="linkN" onClick={closeMenu} href="#about">About</a>
         <a className="linkN" onClick={closeMenu} href="#contact">Contact</a>
         <a className='linkN' href="#lj"><GiCrossedAxes /></a>
