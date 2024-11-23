@@ -16,12 +16,12 @@ export const Contact = () => {
     </div>
     <div className='socials'>
         <div className='aContainer'>
-<a href="https://discord.com/invite/2NessfQFvY" target='_blank'><img src="/socials/discord.png" className='red' alt="" /></a>
-<a href="https://github.com/MarianoVilla" target='_blank'><img src="/socials/github.png" className='red' alt="" /></a>
-<a href="https://www.instagram.com/dager.32/" target='_blank'><img src="/socials/instagram.png" className='red' alt="" /></a>
-<a href="https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?si=mbfNHqvBT9SKSQ-ZNhXHJg&nd=1" target='_blank'><img src="/socials/spotify.png" className='red' alt="" /></a>
-<a href="https://x.com/i/flow/login?redirect_after_login=%2FDager_32" target='_blank'><img src="/socials/x.png" className='red' alt="" /></a>
-<a href="https://www.youtube.com/@DotDager" target='_blank'> <img src="/socials/youtube.png" className='red' alt="" /></a>
+<a href="https://discord.com/invite/2NessfQFvY" target='_blank'><img src="discord.png" className='red' alt="" /></a>
+<a href="https://github.com/MarianoVilla" target='_blank'><img src="github.png" className='red' alt="" /></a>
+<a href="https://www.instagram.com/dager.32/" target='_blank'><img src="instagram.png" className='red' alt="" /></a>
+<a href="https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?si=mbfNHqvBT9SKSQ-ZNhXHJg&nd=1" target='_blank'><img src="spotify.png" className='red' alt="" /></a>
+<a href="https://x.com/i/flow/login?redirect_after_login=%2FDager_32" target='_blank'><img src="x.png" className='red' alt="" /></a>
+<a href="https://www.youtube.com/@DotDager" target='_blank'> <img src="youtube.png" className='red' alt="" /></a>
 </div>
     </div>
     

@@ -24,7 +24,7 @@ export const Interests = () => {
     <div className='interestsContainer'> 
         <Card img={"dagergato.jpg"}
             tittle={"Cat Lover"}
-            text={"I love cats like normal person do, don't you love them?"}
+            text={"I love cats like normal people do, don't you love them?"}
             textLink={"Follow me on Instagram "}
             link={"https://www.instagram.com/dager.32/"}
             icon={<FaInstagram className='instagram' />}/>
