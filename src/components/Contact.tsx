@@ -6,7 +6,7 @@ export const Contact = () => {
     <><div className='contactContainer' id='contact'>
         <div className='textConnect' id='Connect'>
         <img className="pepino" src="pepino.png" alt="Example" /><span className='aboutMariano'> Connect with me </span><img  className="pepino pepinoRotado" src="pepino.png" alt="Example" />
-      <p className='frase'> Do you like pickles as much as me? Do not hesitate! </p>
+      <p className='frase'> Do you like pickles as much as I do? Do not hesitate! </p>
 
       <div className="spinner">
   <img className='imgPepino' src="pepinogiratorio.png" alt="Spinner" />
