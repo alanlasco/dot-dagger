@@ -26,7 +26,7 @@ export const Navbar = () => {
         <a className='linkN' onClick={closeMenu} href="#home">Home</a>
         <a className="linkN" onClick={closeMenu} href="#about">About</a>
         <a className="linkN" onClick={closeMenu} href="#contact">Contact</a>
-        <a className='linkN' href="#lj"><GiCrossedAxes /></a>
+        <a className='linkN' onClick={closeMenu} href="#lj"><GiCrossedAxes /></a>
       </div>
       <div className="burger">
         <Burger clicked={clicked} handleClick={handleclick} />

@@ -159,12 +159,14 @@
   outline:none;
   list-style:none;
   text-decoration:none;
-
+;
   background: transparent;
+
 
 }
 
 .card {
+  
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -172,7 +174,7 @@
   transform: translate(-50%, -50%);
   user-select: none;
   
-  padding: 5rem;
+  padding: 3rem;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 8px;
