@@ -1,186 +1,215 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 @font-face {
-    font-family: 'Noto Serif';
-    src: url('../assets/font/NotoSerif-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Noto Serif';
+  src: url('../assets/font/NotoSerif-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.DotDager,
+.DotDagerInfo,
+.DotDagerText {
+  color: #ffffff;
+}
+
+.pickles {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #88ff64;
+  font-family: "Consolas", "Courier New", "Lucida Console", Monaco, monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  /* Evita que el texto se divida en varias líneas */
+  width: 0;
+  /* Inicia con ancho 0 */
+  border-right: 4px solid;
+  animation: typing 2s steps(10) 1s forwards, blink .5s infinite step-end alternate;
+  /* Ajusta steps según el texto */
+  overflow: hidden;
+  z-index: 2;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 
+  to {
+    width: 18ch;
+    /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
+  }
+}
 
-  .DotDager, .DotDagerInfo, .DotDagerText{
-    color: #ffffff;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+  }
+
+  .roundedImg {
+
+    display: none;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #67175a;
+    /* Valor corregido */
+    box-shadow: 0 0 0 4px #67175a;
+  }
+
+  .DotDager {
+    font-family: 'Noto Serif';
+    font-size: 2rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .roundedImgHidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #67175a;
+    box-shadow: 0 0 0 4px #67175a;
+
   }
 
   .pickles {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    color: #88ff64;
-    font-family: "Consolas", "Courier New", "Lucida Console", Monaco, monospace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+  }
+
+  .DotDagerText {
+    margin: 1rem;
+  }
+
+  .content {
     text-align: center;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    width: 0; /* Inicia con ancho 0 */
-    border-right: 4px solid;
-    animation: typing 2s steps(10) 1s forwards, blink .5s infinite step-end alternate; /* Ajusta steps según el texto */
-    overflow: hidden;
-    z-index: 2;
   }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 18ch; /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-
-
-
- 
-@media screen and (max-width: 769px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-        
-    }
-
-    .roundedImg {
- 
-        display: none;
-        margin-left: 1rem;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #67175a; /* Valor corregido */
-        box-shadow: 0 0 0 4px #67175a; 
-    }
-    .DotDager{
-      font-family: 'Noto Serif';
-      font-size: 2rem;
-    }
-    .buttonContainer{
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      align-items: center;
-    }
-    .roundedImgHidden{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid  #67175a ;
-      box-shadow: 0 0 0 4px #67175a  ; 
-
-    }
-    .pickles{
-      font-size: 1.3rem;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      margin: 0 auto;
-      margin-bottom: .5rem;
-    }
-    .DotDagerText{
-      margin: 1rem;
-    }
-    .content{
-      text-align: center;
-    }
 }
 
-@media screen and (min-width: 769px) { 
-  .content{
+@media screen and (min-width: 769px) {
+  .content {
     text-align: left;
   }
-  .roundedImg{
+
+  .roundedImg {
     margin-top: 2rem;
     display: block;
   }
-  .roundedImgHidden{
+
+  .roundedImgHidden {
     display: none;
   }
 
-.DotDager{  
-        
-        font-size: 3.5vw;
-        font-family: 'Noto Serif';
-        font-weight: 600;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */ 
+  .DotDager {
 
-}
-.DotDagerText{
+    font-size: 3.5vw;
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Ajusta los valores según lo necesites */
+
+  }
+
+  .DotDagerText {
     font-size: 2rem;
     font-family: 'Noto Serif';
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Ajusta los valores según lo necesites */
     margin-bottom: 2rem;
-}
-.DotDagerInfo{
+  }
+
+  .DotDagerInfo {
     font-size: 1rem;
     font-family: 'Noto Serif';
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según lo necesites */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Ajusta los valores según lo necesites */
     margin-bottom: 2em;
     color: rgb(227, 208, 248)
-}}
+  }
+}
 
 :root {
   --color-bg1: rgb(8, 10, 15);
   --color-bg2: rgb(0, 17, 32);
-  --color1: 123, 45, 255; /* Violeta oscuro */
-  --color2: 148, 77, 255; /* Violeta medio */
-  --color3: 189, 110, 255; /* Lila claro */
-  --color4: 160, 92, 255; /* Violeta más oscuro */
-  --color5: 126, 62, 211; /* Púrpura */
-  --color-interactive: 180, 78, 255; /* Violeta interactivo */
+  --color1: 123, 45, 255;
+  /* Violeta oscuro */
+  --color2: 148, 77, 255;
+  /* Violeta medio */
+  --color3: 189, 110, 255;
+  /* Lila claro */
+  --color4: 160, 92, 255;
+  /* Violeta más oscuro */
+  --color5: 126, 62, 211;
+  /* Púrpura */
+  --color-interactive: 180, 78, 255;
+  /* Violeta interactivo */
   --circle-size: 80%;
   --blending: hard-light;
 }
 
 * {
-  margin:0;
-  padding:0;
-  outline:none;
-  list-style:none;
-  text-decoration:none;
-;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  ;
   background: transparent;
 
 
 }
 
 .card {
-  
+
   position: absolute;
   z-index: 10;
-  top: 50%;
+  margin-top: 18em;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
-  
+
   padding: 3rem;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 8px;
-  box-shadow: 0 4px 90px rgba(0,0,0,0.1);
-  overflow: hidden;
-  height: 55%;
+  box-shadow: 0 4px 90px rgba(0, 0, 0, 0.1);
+
+  height: 70vh;
+
   &:before {
     content: "";
     position: absolute;
@@ -189,8 +218,8 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 89%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 34%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 0) 100%);
     opacity: 0.3;
     filter: blur(.5px);
     mix-blend-mode: hard-light;
@@ -204,7 +233,7 @@
     height: 45vh;
 
     z-index: 2;
-    text-shadow: -3px 0px 2px rgba(0,0,0,0.1);
+    text-shadow: -3px 0px 2px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -221,9 +250,11 @@ p {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -233,9 +264,11 @@ p {
   0% {
     transform: translateY(-50%);
   }
+
   50% {
     transform: translateY(50%);
   }
+
   100% {
     transform: translateY(-50%);
   }
@@ -245,9 +278,11 @@ p {
   0% {
     transform: translateX(-50%) translateY(-10%);
   }
+
   50% {
     transform: translateX(50%) translateY(10%);
   }
+
   100% {
     transform: translateX(-50%) translateY(-10%);
   }
@@ -376,101 +411,107 @@ p {
     opacity: 0.7;
   }
 }
-.roundedImg{
-    margin-left: 2rem;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid  #67175a ;
-    box-shadow: 0 0 0 4px #67175a  ; 
-}
-.borderTwo{
-    
-    display: inline-block;
-    margin: 12rem; /* Espacio entre los bordes */
-    background-color: #67175a;  /* Segundo borde, más alejado */
-    border-radius: 50%; 
-    margin-right: 13rem;
+
+.roundedImg {
+  margin-left: 2rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #67175a;
+  box-shadow: 0 0 0 4px #67175a;
 }
 
-.buttonContainer{
-    margin-top: 2rem;
-    justify-content: center;
+.borderTwo {
+
+  display: inline-block;
+  margin: 12rem;
+  /* Espacio entre los bordes */
+  background-color: #67175a;
+  /* Segundo borde, más alejado */
+  border-radius: 50%;
+  margin-right: 13rem;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 
 .boton-elegante {
-    z-index: 80;
-    padding: 15px 30px;
-    border: 2px solid #2c2c2c;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.4s ease;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-    font-weight: bold;
-  }
-  
-  .boton-elegante::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-      circle,
+  z-index: 80;
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
       rgba(255, 255, 255, 0.25) 0%,
-      rgba(255, 255, 255, 0) 70%
-    );
-    transform: scale(0);
-    transition: transform 0.5s ease;
-  }
-  
-  .boton-elegante:hover::after {
-    transform: scale(4);
-  }
-  
-  .boton-elegante:hover {
-    border-color:  #b13fac ;
-    background: #67175a;
-  }
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Espaciado entre texto e imagen */
-  }
-  
+      rgba(255, 255, 255, 0) 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
 
-  
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #b13fac;
+  background: #67175a;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  /* Espaciado entre texto e imagen */
+}
 
 
-  
-  .buttonContainer {
-    margin-top: 20px;
-  }
-  
 
-  
+
+
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+
+
 
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 18ch; /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
-    }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 18ch;
+    /* Ajusta a la longitud del texto, por ejemplo, 'Hola Mundo' tiene 10 caracteres */
+  }
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
