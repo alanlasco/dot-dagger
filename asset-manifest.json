@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dot-dagger/static/css/main.5260f4d0.css",
-    "main.js": "/dot-dagger/static/js/main.29a124d8.js",
+    "main.css": "/dot-dagger/static/css/main.a2a1aa27.css",
+    "main.js": "/dot-dagger/static/js/main.90555a6c.js",
     "static/media/NotoSerif-SemiBold.ttf": "/dot-dagger/static/media/NotoSerif-SemiBold.f46358e6bc84bdb94dd4.ttf",
     "index.html": "/dot-dagger/index.html",
-    "main.5260f4d0.css.map": "/dot-dagger/static/css/main.5260f4d0.css.map",
-    "main.29a124d8.js.map": "/dot-dagger/static/js/main.29a124d8.js.map"
+    "main.a2a1aa27.css.map": "/dot-dagger/static/css/main.a2a1aa27.css.map",
+    "main.90555a6c.js.map": "/dot-dagger/static/js/main.90555a6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5260f4d0.css",
-    "static/js/main.29a124d8.js"
+    "static/css/main.a2a1aa27.css",
+    "static/js/main.90555a6c.js"
   ]
 }
