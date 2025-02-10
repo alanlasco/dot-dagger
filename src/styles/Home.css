@@ -197,7 +197,7 @@
 
   position: absolute;
   z-index: 10;
-  margin-top: 18em;
+  margin-top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
